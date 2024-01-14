@@ -13,8 +13,7 @@
                 Clicked = "OnTranslateClicked"/>
         <Button x:Name = "CallButton"
                 Text = "Call"
-                IsEnabled = "False"
-                Clicked = "OnCallClicked"/>
+                IsEnabled = "False"/>
     </VerticalStackLayout>
 
 </ContentPage>
