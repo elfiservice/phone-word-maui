@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
 
 	string translatedNumber;
 
-	private void OnTranslate(object sender, EventArgs e)
+	private void OnTranslateClicked(object sender, EventArgs e)
 	{
 		string enteredNumber = PhoneNumberText.Text;
 		translatedNumber = Core.PhonewordTranslator.ToNumber(enteredNumber);
@@ -27,7 +27,7 @@ public partial class MainPage : ContentPage
 		}
 	}
 
-	async void OnCall(object sender, System.EventArgs e)
+	async void OnCallClicked(object sender, EventArgs e)
 	{
 		if (await this.DisplayAlert(
 			"Dial a Number",

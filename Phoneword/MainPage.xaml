@@ -10,11 +10,11 @@
                Text = "1-555-NETMAUI" />
         <Button x:Name = "TranslateButton"
                 Text = "Translate"
-                Clicked = "OnTranslate"/>
+                Clicked = "OnTranslateClicked"/>
         <Button x:Name = "CallButton"
                 Text = "Call"
                 IsEnabled = "False"
-                Clicked = "OnCall"/>
+                Clicked = "OnCallClicked"/>
     </VerticalStackLayout>
 
 </ContentPage>
