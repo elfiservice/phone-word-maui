@@ -3,7 +3,7 @@
 public partial class MainPage : ContentPage
 {
 
-	public const double MyFontSize = 28;
+	public const double MyFontSize = 28; // note: A const value is static
 
 	public MainPage()
 	{
