@@ -3,6 +3,8 @@
 public partial class MainPage : ContentPage
 {
 
+	public const double MyFontSize = 28;
+
 	public MainPage()
 	{
 		InitializeComponent();
@@ -53,4 +55,13 @@ public partial class MainPage : ContentPage
 			}
 		}
 	}
+}
+
+// https://learn.microsoft.com/en-us/training/modules/create-user-interface-xaml/6-xaml-markup-extensions
+public class GlobalFontSizeExtension : IMarkupExtension
+{
+    public object ProvideValue(IServiceProvider serviceProvider)
+    {
+        return MainPage.MyFontSize;
+    }
 }
