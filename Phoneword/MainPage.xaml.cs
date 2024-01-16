@@ -65,3 +65,13 @@ public class GlobalFontSizeExtension : IMarkupExtension
         return MainPage.MyFontSize;
     }
 }
+
+[ContentProperty ("Member")]
+public class StaticExtension : IMarkupExtension
+{
+    public string Member {get; set;}
+    public object ProvideValue (IServiceProvider serviceProvider)
+    {
+        return MainPage.MyFontSize;
+    }
+}

@@ -9,6 +9,10 @@
               Text = "Enter a Phoneword"
               FontSize="{mycode:GlobalFontSize}"
        />
+       <Label
+              Text = "Enter a Phoneword 2 test"
+              FontSize="{x:Static Member=mycode:MainPage.MyFontSize}"
+       />
         <Entry x:Name = "PhoneNumberText"
                Text = "1-555-NETMAUI" />
         <Button x:Name = "TranslateButton"
