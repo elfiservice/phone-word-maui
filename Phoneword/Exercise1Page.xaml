@@ -4,7 +4,14 @@
              x:Class="Phoneword.Exercise1Page"
              Title="Exercise1Page">
 
-    <VerticalStackLayout x:Name="MyStackLayout" Margin="30,60,30,30">
+    <VerticalStackLayout>
+        <VerticalStackLayout.Padding>
+			<OnPlatform x:TypeArguments="Thickness">
+				<On Platform="iOS" Value="30,60,30,30" />
+				<On Platform="Android" Value="30" />
+				<On Platform="WinUI" Value="30" />
+			</OnPlatform>
+        </VerticalStackLayout.Padding>
         <Label Text="Notes"
                HorizontalOptions="Center"
                FontAttributes="Bold" />
