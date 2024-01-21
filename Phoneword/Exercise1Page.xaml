@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:notes="clr-namespace:Notes"
              x:Class="Phoneword.Exercise1Page"
              Title="Exercise1Page">
 
@@ -14,7 +15,8 @@
         </VerticalStackLayout.Padding>
         <Label Text="Notes"
                HorizontalOptions="Center"
-               FontAttributes="Bold" />
+               FontAttributes="Bold"
+               TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
         <Editor x:Name="editorNote"
                 Placeholder="Enter your note"
                 HeightRequest="100" />
