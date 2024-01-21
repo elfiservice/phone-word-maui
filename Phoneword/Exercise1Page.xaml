@@ -19,16 +19,22 @@
                TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
         <Editor x:Name="editorNote"
                 Placeholder="Enter your note"
-                HeightRequest="100" />
-        <Grid ColumnDefinitions="Auto, 30, Auto">
+                HeightRequest="100"
+                TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
+        <Grid Grid.Row="2" ColumnDefinitions="Auto, 30, Auto">
+
             <Button Grid.Column="0"
-                    Text="Save" 
-                    WidthRequest="100"
-                    Clicked="OnSaveButtonClicked" />
-            <Button Grid.Column="2"
-                    Text="Delete" 
-                     WidthRequest="100"
-                    Clicked="OnDeleteButtonClicked" />
+					TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+					BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
+					Text="Save" 
+					WidthRequest="100"
+					Clicked="OnSaveButtonClicked" />
+			<Button Grid.Column="2"
+					Text="Delete"
+					TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+					BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
+					WidthRequest="100"
+					Clicked="OnDeleteButtonClicked" />
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
