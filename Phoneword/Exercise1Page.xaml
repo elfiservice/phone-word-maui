@@ -4,7 +4,7 @@
              x:Class="Phoneword.Exercise1Page"
              Title="Exercise1Page">
 
-    <VerticalStackLayout Margin="30,60,30,30">
+    <VerticalStackLayout x:Name="MyStackLayout" Margin="30,60,30,30">
         <Label Text="Notes"
                HorizontalOptions="Center"
                FontAttributes="Bold" />
