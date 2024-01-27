@@ -1,4 +1,4 @@
-namespace Phoneword;
+namespace Phoneword.Pages;
 
 public partial class Exercise1Page : ContentPage
 {
