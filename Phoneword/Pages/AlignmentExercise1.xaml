@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:Phoneword"
              x:Class="Phoneword.Pages.AlignmentExercise1">
 
+    <StackLayout x:Name="stackName">
+    </StackLayout>
+
+<!--
     <Grid Padding="20" RowSpacing="10" RowDefinitions="50,50,*">
 
         <HorizontalStackLayout Grid.Row="0" Spacing="10">
@@ -25,5 +29,5 @@
         <Label Grid.Row="2" FontSize="25" x:Name="target" BackgroundColor="Silver" Text="Hello" />
 
     </Grid>
-
+-->
 </ContentPage>
