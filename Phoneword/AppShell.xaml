@@ -12,10 +12,22 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
--->
+
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate pages:Exercise1Page}"
         Route="Exercise1Page" />
+-->
+
+
+ <!--   <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate pages:AlignmentExercise1}"
+        Route="AlignmentExercise1" />
+-->
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate pages:TipCalculatorEx3}"
+        Route="TipCalculatorEx3" />
 
 </Shell>
