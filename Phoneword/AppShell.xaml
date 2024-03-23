@@ -35,17 +35,23 @@
         ContentTemplate="{DataTemplate pages:SharedResourcesEx1.StandardTipPage}"
         Route="StandardTipPage" />
 -->
-    <FlyoutItem Title="Moon Phase">
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
+            <Image Source="moon.png" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Moon Phase" Icon="moon.png">
         <ShellContent
             ContentTemplate="{DataTemplate pages:FlyoutEx1.MoonPhasePage}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Sunrise">
+    <FlyoutItem Title="Sunrise" Icon="sun.png">
         <ShellContent
             ContentTemplate="{DataTemplate pages:FlyoutEx1.SunrisePage}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="About">
+    <FlyoutItem Title="About" Icon="question.png">
         <ShellContent
             ContentTemplate="{DataTemplate pages:FlyoutEx1.AboutPage}"/>
     </FlyoutItem>
