@@ -10,6 +10,6 @@ public partial class AppShell : Shell
 
 		Routing.RegisterRoute(nameof(CustomTipPage), typeof(CustomTipPage));
 
-        Application.Current.UserAppTheme = AppTheme.Light;
+        Application.Current.UserAppTheme = AppTheme.Dark;
 	}
 }

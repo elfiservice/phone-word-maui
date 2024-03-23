@@ -10,6 +10,7 @@
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
+<!--
             <Color x:Key="bgColor">Silver</Color>
             <Color x:Key="fgColor">#0000AD</Color>
             <x:Double x:Key="fontSize">28</x:Double>
@@ -21,6 +22,7 @@
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="TextColor" Value="Red" />
             </Style>
+-->
         </ResourceDictionary>
     </Application.Resources>
 </Application>

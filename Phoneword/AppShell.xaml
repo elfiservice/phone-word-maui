@@ -29,10 +29,13 @@
         Title="Home"
         ContentTemplate="{DataTemplate pages:TipCalculatorEx3}"
         Route="TipCalculatorEx3" />
--->
+
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate pages:SharedResourcesEx1.StandardTipPage}"
         Route="StandardTipPage" />
+-->
+    <ShellContent
+        ContentTemplate="{DataTemplate pages:FlyoutEx1.MoonPhasePage}"/>
 
 </Shell>
