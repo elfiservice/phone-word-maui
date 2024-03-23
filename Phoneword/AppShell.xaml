@@ -5,8 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Phoneword"
     xmlns:pages="clr-namespace:Phoneword.Pages"
-    Shell.FlyoutBehavior="Disabled"
-    Title="Phoneword">
+    Title="Phoneword"
+    FlyoutIcon="moon.png">
 <!-- This is a XAML comment 
     <ShellContent
         Title="Home"
@@ -35,7 +35,18 @@
         ContentTemplate="{DataTemplate pages:SharedResourcesEx1.StandardTipPage}"
         Route="StandardTipPage" />
 -->
-    <ShellContent
-        ContentTemplate="{DataTemplate pages:FlyoutEx1.MoonPhasePage}"/>
+    <FlyoutItem Title="Moon Phase">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:FlyoutEx1.MoonPhasePage}"/>
+    </FlyoutItem>
 
+    <FlyoutItem Title="Sunrise">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:FlyoutEx1.SunrisePage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="About">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:FlyoutEx1.AboutPage}"/>
+    </FlyoutItem>
 </Shell>
