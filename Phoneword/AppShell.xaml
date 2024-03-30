@@ -35,6 +35,8 @@
         ContentTemplate="{DataTemplate pages:SharedResourcesEx1.StandardTipPage}"
         Route="StandardTipPage" />
 -->
+
+<!-- Menu Lateral - side menu 
     <Shell.FlyoutHeader>
         <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
             <Image Source="moon.png" />
@@ -55,4 +57,17 @@
         <ShellContent
             ContentTemplate="{DataTemplate pages:FlyoutEx1.AboutPage}"/>
     </FlyoutItem>
+-->
+
+<!-- Tab menu  -->
+
+    <TabBar>
+        <Tab Title="Moon Phase" Icon="moon.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:FlyoutEx1.MoonPhasePage}" />
+        </Tab>
+        <Tab Title="Sunrise" Icon="sun.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:FlyoutEx1.SunrisePage}"/>
+        </Tab>
+    </TabBar>
+
 </Shell>
