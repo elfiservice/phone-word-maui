@@ -78,6 +78,9 @@
         
         <ShellContent Title="Sunrise" Icon="sun.png"
             ContentTemplate="{DataTemplate pages:FlyoutEx1.SunrisePage}"/>
+
+        <ShellContent Title="Bodies" Icon="comet.png"
+            ContentTemplate="{DataTemplate pages:FlyoutEx1.AstronomicalBodiesPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="About" Icon="question.png">
