@@ -59,7 +59,7 @@
     </FlyoutItem>
 -->
 
-<!-- Tab menu  -->
+<!-- Tab menu  
 
     <TabBar>
         <Tab Title="Moon Phase" Icon="moon.png">
@@ -69,5 +69,20 @@
             <ShellContent ContentTemplate="{DataTemplate pages:FlyoutEx1.SunrisePage}"/>
         </Tab>
     </TabBar>
+-->
+
+<!-- Tab menu with Flyout -->
+    <FlyoutItem Title="Astronomy" Icon="moon.png">
+        <ShellContent Title="Moon Phase" Icon="moon.png"
+            ContentTemplate="{DataTemplate pages:FlyoutEx1.MoonPhasePage}"/>
+        
+        <ShellContent Title="Sunrise" Icon="sun.png"
+            ContentTemplate="{DataTemplate pages:FlyoutEx1.SunrisePage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Icon="question.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:FlyoutEx1.AboutPage}"/>
+    </FlyoutItem>
 
 </Shell>
